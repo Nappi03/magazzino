@@ -29,10 +29,10 @@ while ($row = $prodotto->fetchArray(SQLITE3_ASSOC)) {
 
     <h1 class="mt-5 mb-4">Prodotto: <?php echo $nome ?></h1>
     <h3 class="mt-3 mb-2">Quantità in magazzino: <?php echo $qt ?></h3>
-    <a type="submit" class="btn btn-success mt-3 mb-2" href="modifica-prodotto.php/?id=<?php echo $id ?>">Modifica
-        Prodotto</a>
+    <!--<a type="submit" class="btn btn-success mt-3 mb-2" href="modifica-prodotto.php/?id=<?//php echo $id ?>">Modifica
+        Prodotto</a> -->
 
-    <h2 class="mt-5 mb-4">Carico</h2>
+    <h2 class="mt-4 mb-4">Carico</h2>
     <!-- TABELLA DI CARICO -->
     <div class="container">
         <table id="myTable" class="table table-bordered table-striped">
