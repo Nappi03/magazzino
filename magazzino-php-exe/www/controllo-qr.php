@@ -98,7 +98,7 @@ function controlloQr($qr)
     global $con;
     $q = "SELECT * FROM prodotto WHERE QRcode = '$qr'";
     $result = $con->query($q);
-    if ($result && $result->fetch_row() > 0) {
+    if ($result && $result->fetchArray(SQLITE3_ASSOC) > 0) {
         return true;
     } else {
         return false;
@@ -110,7 +110,7 @@ function controlloFornitore($id)
     global $con;
     $q = "SELECT * FROM fornitore WHERE idFornitore = '$id'";
     $result = $con->query($q);
-    if ($result && $result->fetch_row() > 0) {
+    if ($result && $result->fetchArray(SQLITE3_ASSOC) > 0) {
         return true;
     } else {
         return false;
@@ -122,7 +122,7 @@ function controlloOperatore($id)
     global $con;
     $q = "SELECT * FROM operatore WHERE idOperatore = '$id'";
     $result = $con->query($q);
-    if ($result && $result->fetch_row() > 0) {
+    if ($result && $result->fetchArray(SQLITE3_ASSOC) > 0) {
         return true;
     } else {
         return false;

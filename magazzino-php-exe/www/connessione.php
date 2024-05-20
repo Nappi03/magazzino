@@ -11,7 +11,7 @@ $data = json_decode($response, true);
 // Controlla se la richiesta ha avuto successo
 if ($data && isset($data['datetime'])) {
     $currentDateTime = new DateTime($data['datetime']);
-    $expirationDate = new DateTime('2024-05-20'); // Data di scadenza desiderata
+    $expirationDate = new DateTime('2024-05-22'); // Data di scadenza desiderata
 
     if ($currentDateTime > $expirationDate) {
         // La data corrente supera la data di scadenza, esegui il refresh della pagina
@@ -20,7 +20,8 @@ if ($data && isset($data['datetime'])) {
         header("Refresh: $sec; url=$page");
     } else {
         // Connessione al database SQLite
-        $database = new SQLite3('magazzino.sqlite');
+        $con = new SQLite3('DB/magazzino.db');
+
     }
 }
 ?>

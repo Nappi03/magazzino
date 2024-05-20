@@ -7,8 +7,8 @@ $id = $_GET["id"];
 $qt = $_GET["qt"];
 $q = "SELECT * FROM prodotto WHERE QRcode = '$id'";
 $prodotto = $con->query($q);
-while ($row = $prodotto->fetch_object()) {
-    $nome = $row->nomeProd;
+while ($row = $prodotto->fetchArray(SQLITE3_ASSOC)) {
+    $nome = $row['nomeProd'];
 }
 ?>
 <head>
@@ -54,13 +54,13 @@ while ($row = $prodotto->fetch_object()) {
     JOIN prodotto p ON cp.QRcode = p.QRcode
     WHERE cp.QRcode = '$id'";
             $carico = $con->query($q);
-            while ($row = $carico->fetch_object()) {
+            while ($row = $carico->fetchArray(SQLITE3_ASSOC)) {
                 echo "<tr>";
-                echo "<td>$row->idCarico</td>";
-                echo "<td>$row->nomeUtente</td>";
-                echo "<td>" . date('d/m/Y H:i:s', strtotime($row->dataOraCarico)) . "</td>";
-                echo "<td>$row->nomeFornitore</td>";
-                echo "<td>$row->quantita_in_carico</td>";
+                echo "<td>{$row['idCarico']}</td>";
+                echo "<td>{$row['nomeUtente']}</td>";
+                echo "<td>" . date('d/m/Y H:i:s', strtotime($row['dataOraCarico'])) . "</td>";
+                echo "<td>{$row['nomeFornitore']}</td>";
+                echo "<td>{$row['quantita_in_carico']}</td>";
                 echo "</tr>";
             }
             ?>
@@ -91,13 +91,13 @@ while ($row = $prodotto->fetch_object()) {
 
     WHERE sp.QRcode = '$id'";
             $scarico = $con->query($q);
-            while ($row = $scarico->fetch_object()) {
+            while ($row = $scarico->fetchArray(SQLITE3_ASSOC)) {
                 echo "<tr>";
-                echo "<td>$row->idScarico</td>";
-                echo "<td>$row->nomeUtente</td>";
-                echo "<td>" . date('d/m/Y H:i:s', strtotime($row->dataOraScarico)) . "</td>";
-                echo "<td>$row->quantita_in_scarico</td>";
-                echo "<td>$row->nomeOperatore</td>";
+                echo "<td>{$row['idScarico']}</td>";
+                echo "<td>{$row['nomeUtente']}</td>";
+                echo "<td>" . date('d/m/Y H:i:s', strtotime($row['dataOraScarico'])) . "</td>";
+                echo "<td>{$row['quantita_in_scarico']}</td>";
+                echo "<td>{$row['nomeOperatore']}</td>";
                 echo "</tr>";
             }
             ?>

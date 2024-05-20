@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $q = "SELECT * FROM prodotto WHERE QRcode = '$qrCode'";
         $result = $con->query($q);
-        while ($row = $result->fetch_assoc()) {
+        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
             $nomeProd = $row['nomeProd'];
             $categoriaProd = $row['categoria'];
         }
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $con->query($q);
         $q = "SELECT idScarico FROM scarico WHERE dataOraScarico = '$dataOdierna'";
         $result = $con->query($q);
-        while ($row = $result->fetch_assoc()) {
+        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
             $idScarico = $row['idScarico'];
         }
         $q = "INSERT INTO scarico_prodotti VALUES ('$qrCode', $idScarico , $qt)";
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $con->query($q);
         $q = "SELECT idScarico FROM scarico WHERE dataOraScarico = '$dataOdierna'";
         $result = $con->query($q);
-        while ($row = $result->fetch_assoc()) {
+        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
             $idScarico = $row['idScarico'];
         }
         $q = "INSERT INTO scarico_prodotti VALUES ('$qrCode', $idScarico , $qt)";

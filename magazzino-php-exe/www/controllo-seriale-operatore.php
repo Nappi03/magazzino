@@ -33,7 +33,7 @@ function controllo($id)
     global $con;
     $q = "SELECT * FROM operatore WHERE idOperatore = '$id'";
     $result = $con->query($q);
-    if ($result && $result->fetch_row() > 0) {
+    if ($result && $result->fetchArray(SQLITE3_ASSOC) > 0) {
         return true;
     } else {
         return false;

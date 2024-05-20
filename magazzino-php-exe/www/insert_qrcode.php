@@ -9,7 +9,7 @@
 
         $q = "select * from utente where idUtente = ".intval($pieces[0]);
         $res = $con->query($q);
-        $row = $res->fetch_array(MYSQLI_ASSOC);
+        $row = $res->fetchArray(SQLITE3_ASSOC);
         echo json_encode($row);
     }
 ?>
