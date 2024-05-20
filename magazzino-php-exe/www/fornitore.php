@@ -70,7 +70,6 @@ require "connessione.php";
             </div>
             <div class="modal-footer">
                 <a id="downloadLink" class="btn btn-primary" download="fornitoreQrCode.jpg" href="#">Download QrCode</a>
-                <button id="stampareBtn" class="btn btn-primary">Stampa QrCode</button>
             </div>
         </div>
     </div>
