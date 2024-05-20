@@ -51,4 +51,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 </body>
+<?php require "footer.php"; ?>
 </html>

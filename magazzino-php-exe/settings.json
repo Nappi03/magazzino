@@ -11,7 +11,7 @@
     },
     "main_window": {
         "title": "Gestionale Magazzino",
-        "icon": "",
+        "icon": "icon.ico",
         "default_size": [1280, 720],
         "minimum_size": [1280, 720],
         "maximum_size": [0, 0],
@@ -24,7 +24,7 @@
         "minimize_to_tray_message": "Minimized to tray"
     },
     "popup_window": {
-        "icon": "",
+        "icon": "icon.ico",
         "fixed_title": "Alert",
         "center_relative_to_parent": true,
         "default_size": [800, 600]

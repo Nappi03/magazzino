@@ -114,4 +114,5 @@ function controllo($id)
 </div>
 
 </body>
+<?php require "footer.php"; ?>
 </html>

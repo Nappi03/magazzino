@@ -44,4 +44,5 @@ require "connessione.php";
 </div>
 
 </body>
+<?php require "footer.php"; ?>
 </html>

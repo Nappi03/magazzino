@@ -45,4 +45,5 @@ if (isset($_GET["msg"])) {
 </div>
 
 </body>
+<?php require "footer.php"; ?>
 </html>

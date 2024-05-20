@@ -142,4 +142,5 @@ function salvaImg($imgFileName, $imgTmpName, $qrCode)
     </form>
 </div>
 </body>
+<?php require "footer.php"; ?>
 </html>
