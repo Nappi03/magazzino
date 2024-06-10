@@ -56,11 +56,11 @@ while ($row = $prodotto->fetch_object()) {
             $carico = $con->query($q);
             while ($row = $carico->fetch_object()) {
                 echo "<tr>";
-                echo "<td>{$row['idCarico']}</td>";
-                echo "<td>{$row['nomeUtente']}</td>";
-                echo "<td>" . date('d/m/Y H:i:s', strtotime($row['dataOraCarico'])) . "</td>";
-                echo "<td>{$row['nomeFornitore']}</td>";
-                echo "<td>{$row['quantita_in_carico']}</td>";
+                echo "<td>$row->idCarico</td>";
+                echo "<td>$row->nomeUtente</td>";
+                echo "<td>" . date('d/m/Y H:i:s', strtotime($row->dataOraCarico)) . "</td>";
+                echo "<td>$row->nomeFornitore</td>";
+                echo "<td>$row->quantita_in_carico</td>";
                 echo "</tr>";
             }
             ?>
@@ -93,11 +93,11 @@ while ($row = $prodotto->fetch_object()) {
             $scarico = $con->query($q);
             while ($row = $scarico->fetch_object()) {
                 echo "<tr>";
-                echo "<td>{$row['idScarico']}</td>";
-                echo "<td>{$row['nomeUtente']}</td>";
-                echo "<td>" . date('d/m/Y H:i:s', strtotime($row['dataOraScarico'])) . "</td>";
-                echo "<td>{$row['quantita_in_scarico']}</td>";
-                echo "<td>{$row['nomeOperatore']}</td>";
+                echo "<td>$row->idScarico</td>";
+                echo "<td>$row->nomeUtente</td>";
+                echo "<td>" . date('d/m/Y H:i:s', strtotime($row->dataOraScarico)) . "</td>";
+                echo "<td>$row->quantita_in_scarico</td>";
+                echo "<td>$row->nomeOperatore</td>";
                 echo "</tr>";
             }
             ?>

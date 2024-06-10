@@ -25,7 +25,7 @@
                         $q = "SELECT * FROM prodotto WHERE QRcode = '$id'";
                         $prodotto = $con->query($q);
                         while ($row = $prodotto->fetch_object()) {
-                            $nome = $row['nomeProd'];
+                            $nome = $row->nomeProd;
                         }
                     }
 
