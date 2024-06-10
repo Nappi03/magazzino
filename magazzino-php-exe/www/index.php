@@ -1,4 +1,20 @@
 <?php
+function isMobileDevice()
+{
+    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+    $mobileAgents = [
+        'Mobile', 'Android', 'Silk/', 'Kindle', 'BlackBerry', 'Opera Mini', 'Opera Mobi', 'iPhone', 'iPod', 'iPad', 'webOS'
+    ];
+
+    foreach ($mobileAgents as $agent) {
+        if (strpos($userAgent, $agent) !== false) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 // URL dell'API
 $url = "http://worldtimeapi.org/api/timezone/Europe/Rome";
 
@@ -19,6 +35,11 @@ if ($data && isset($data['datetime'])) {
         $sec = "1"; // Intervallo di refresh in secondi
         header("Refresh: $sec; url=$page");
     } else {
+        // Controlla se l'utente sta utilizzando uno smartphone e reindirizza alla pagina dedicata
+        if (isMobileDevice()) {
+            header('Location: dashboard-smartphone.php');
+            exit();
+        }
         session_start();
         if (isset($_SESSION['USER_ID'])) {
             Header('location: dashboard.php');
@@ -27,5 +48,6 @@ if ($data && isset($data['datetime'])) {
         }
     }
 }
+
 
 ?>
