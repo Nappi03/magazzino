@@ -11,14 +11,14 @@ if (isset($_POST["qrCode"])) {
 
             $q = "SELECT * FROM prodotto WHERE QRcode = '$qrCode'";
             $result = $con->query($q);
-            while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+            while ($row = $result->fetch_assoc()) {
                 $nomeProd = $row['nomeProd'];
                 $categoriaProd = $row['categoria'];
             }
 
             $q = "SELECT * FROM operatore WHERE idOperatore = '" . $_POST["operatore"] . "'";
             $result = $con->query($q);
-            while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+            while ($row = $result->fetch_assoc()) {
                 $operatore = $row['nominativo'];
                 $idOp = $row['idOperatore'];
             }
@@ -44,7 +44,7 @@ function controllo($id)
     global $con;
     $q = "SELECT * FROM prodotto WHERE QRcode = '$id'";
     $result = $con->query($q);
-    if ($result && $result->fetchArray(SQLITE3_ASSOC) > 0) {
+    if ($result && $result->fetch_row() > 0) {
         return true;
     } else {
         return false;

@@ -3433,3 +3433,505 @@
 - 14:31:33.469 DEBUG: OnBrowserDestroyed()
 - 14:31:33.844 INFO: Ended application
 - 14:31:33.844 INFO: --------------------------------------------------------
+- 11:50:21.000 INFO: --------------------------------------------------------
+- 11:50:21.000 INFO: Started application
+- 11:50:21.000 INFO: Logging to: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log
+- 11:50:21.000 INFO: Log level = DEBUG4
+- 11:50:21.000 INFO: Starting Mongoose 3.9c web server
+- 11:50:21.000 INFO: WWW directory: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\www
+- 11:50:21.000 INFO: Index files: index.html,index.php
+- 11:50:21.000 INFO: CGI interpreter: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\php\php-cgi.exe
+- 11:50:21.000 INFO: CGI pattern: **.php$
+- 11:50:21.000 INFO: Hide files patterns: 
+- 11:50:21.000 INFO: CGI environment variables set: TMP=C:\Users\Utente\AppData\Local\Temp\,TEMP=C:\Users\Utente\AppData\Local\Temp\,TMPDIR=C:\Users\Utente\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 11:50:21.000 INFO: Web server url: http://127.0.0.1:58168/
+- 11:50:21.000 INFO: remote_debugging_port = 52136
+- 11:50:21.204 DEBUG: Command line string for the browser process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --remote-debugging-port=52136
+- 11:50:24.344 DEBUG: App::OnContextInitialized()
+- 11:50:24.344 DEBUG: Window max width/height = 1840/984
+- 11:50:24.360 DEBUG: GetBrowserWindow(): not found, hwnd = 198334
+- 11:50:24.360 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 11:50:24.407 DEBUG: BrowserWindow::CreateBrowserControl()
+- 11:50:24.407 DEBUG: StoreBrowserWindow(): hwnd = 198334
+- 11:50:24.907 DEBUG: ClientHandler::OnAfterCreated()
+- 11:50:24.907 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 11:50:24.922 DEBUG: OnLoadingStateChange: loading=1, url=
+- 11:50:24.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x9a78 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.4502 --gpu-driver-date=8-7-2023 --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --service-request-channel-token=06BC4417E7606CB85C843BEC9FC25C9F --mojo-platform-channel-handle=1992 /prefetch:2
+- 11:50:24.015 DEBUG: Command line string for the renderer process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=renderer --no-sandbox --primordial-pipe-token=589E5B72ADC520DA91646A6A8B919E84 --lang=en-US --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=589E5B72ADC520DA91646A6A8B919E84 --renderer-client-id=2 --mojo-platform-channel-handle=2320 /prefetch:1
+[0521/115025.522:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 11:50:26.265 DEBUG: OnBrowserCreated()
+[0521/115026.023:ERROR:backend_impl.cc(1033)] Critical error found -8
+[0521/115028.052:WARNING:storage_block-inl.h(131)] Failed data load.
+- 11:50:28.375 INFO: GET 302 /
+- 11:50:28.938 INFO: GET 200 /login.php
+- 11:50:28.968 DEBUG: OnContextCreated()
+[0521/115028.929:INFO:CONSOLE(6)] "Uncaught TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.", source: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js (6)
+- 11:50:29.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/login.php
+- 11:50:49.250 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58168/login.php
+- 11:50:50.422 INFO: POST 302 /login.php
+- 11:50:50.562 DEBUG: OnContextCreated()
+- 11:50:50.594 INFO: GET 200 /css/main.css
+- 11:50:50.610 INFO: GET 200 /dashboard.php
+[0521/115050.562:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0521/115050.567:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:50:50.938 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/dashboard.php
+- 11:50:58.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58168/dashboard.php
+- 11:50:58.562 DEBUG: OnContextCreated()
+- 11:50:58.594 INFO: GET 200 /fornitore.php
+- 11:50:58.610 INFO: GET 304 /css/main.css
+[0521/115058.392:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0521/115058.403:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:50:58.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/fornitore.php
+- 11:50:58.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58168/fornitore.php
+- 11:50:59.297 DEBUG: OnContextCreated()
+- 11:50:59.344 INFO: GET 200 /operatore.php
+- 11:50:59.344 INFO: GET 304 /css/main.css
+[0521/115059.173:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0521/115059.173:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:50:59.485 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/operatore.php
+- 11:51:00.829 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58168/operatore.php
+- 11:51:00.968 DEBUG: OnContextCreated()
+- 11:51:00.000 INFO: GET 200 /nuovo-operatore.php
+- 11:51:00.000 INFO: GET 304 /css/main.css
+[0521/115100.782:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0521/115100.793:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:51:00.094 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/nuovo-operatore.php
+- 11:51:01.563 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58168/nuovo-operatore.php
+- 11:51:01.078 DEBUG: OnContextCreated()
+- 11:51:01.125 INFO: GET 200 /nuovo-prodotto.php
+- 11:51:01.125 INFO: GET 304 /css/main.css
+[0521/115101.902:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0521/115101.902:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:51:01.204 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/nuovo-prodotto.php
+- 11:51:02.375 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58168/nuovo-prodotto.php
+- 11:51:02.500 DEBUG: OnContextCreated()
+- 11:51:02.532 INFO: GET 200 /scelta-carico.php
+- 11:51:02.547 INFO: GET 304 /css/main.css
+[0521/115102.323:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0521/115102.324:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:51:02.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/scelta-carico.php
+- 11:51:02.266 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58168/scelta-carico.php
+- 11:51:03.390 DEBUG: OnContextCreated()
+- 11:51:03.422 INFO: GET 200 /scelta-scarico.php
+- 11:51:03.422 INFO: GET 304 /css/main.css
+[0521/115103.203:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0521/115103.203:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:51:03.516 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58168/scelta-scarico.php
+- 11:51:04.047 DEBUG: WM_DESTROY
+- 11:51:04.047 DEBUG: RemoveBrowserWindow(): hwnd = 198334
+- 11:51:04.047 INFO: Stopping Mongoose web server
+- 11:51:04.047 DEBUG: Mongoose webserver stopped immediately
+- 11:51:04.047 DEBUG: OnBeforeClose() hwnd=788266
+- 11:51:04.047 DEBUG: RemoveBrowserWindow(): hwnd = 788266
+- 11:51:04.047 DEBUG: GetBrowserWindow(): not found, hwnd = 788266
+- 11:51:04.047 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 11:51:04.047 DEBUG: Calling CefQuitMessageLoop()
+- 11:51:04.125 INFO: Ended application
+- 11:51:04.125 INFO: --------------------------------------------------------
+- 12:48:06.000 INFO: --------------------------------------------------------
+- 12:48:06.000 INFO: Started application
+- 12:48:06.000 INFO: Logging to: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log
+- 12:48:06.000 INFO: Log level = DEBUG4
+- 12:48:06.000 INFO: Starting Mongoose 3.9c web server
+- 12:48:06.000 INFO: WWW directory: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\www
+- 12:48:06.000 INFO: Index files: index.html,index.php
+- 12:48:06.000 INFO: CGI interpreter: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\php\php-cgi.exe
+- 12:48:06.000 INFO: CGI pattern: **.php$
+- 12:48:06.000 INFO: Hide files patterns: 
+- 12:48:06.000 INFO: CGI environment variables set: TMP=C:\Users\Utente\AppData\Local\Temp\,TEMP=C:\Users\Utente\AppData\Local\Temp\,TMPDIR=C:\Users\Utente\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 12:48:06.016 INFO: Web server url: http://127.0.0.1:53142/
+- 12:48:06.016 INFO: remote_debugging_port = 59980
+- 12:48:06.016 DEBUG: Command line string for the browser process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --remote-debugging-port=59980
+- 12:48:06.234 DEBUG: App::OnContextInitialized()
+- 12:48:06.234 DEBUG: Window max width/height = 1840/984
+- 12:48:06.234 DEBUG: GetBrowserWindow(): not found, hwnd = 1312024
+- 12:48:06.234 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 12:48:06.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x9a78 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.4502 --gpu-driver-date=8-7-2023 --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --service-request-channel-token=099BE46F962BAA75D7AFE79D214FD1F0 --mojo-platform-channel-handle=1864 /prefetch:2
+- 12:48:06.250 DEBUG: BrowserWindow::CreateBrowserControl()
+- 12:48:06.250 DEBUG: StoreBrowserWindow(): hwnd = 1312024
+- 12:48:07.313 DEBUG: ClientHandler::OnAfterCreated()
+- 12:48:07.313 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 12:48:07.328 DEBUG: OnLoadingStateChange: loading=1, url=
+- 12:48:07.016 DEBUG: Command line string for the renderer process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=renderer --no-sandbox --primordial-pipe-token=075AAAA739CAEB0224E939582F0EAA36 --lang=en-US --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=075AAAA739CAEB0224E939582F0EAA36 --renderer-client-id=3 --mojo-platform-channel-handle=2372 /prefetch:1
+[0524/124807.107:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 12:48:07.063 DEBUG: OnBrowserCreated()
+- 12:48:08.172 INFO: GET 200 /
+- 12:48:08.188 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/
+- 12:48:09.203 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/
+- 12:48:10.469 INFO: GET 200 /index.php
+- 12:48:10.469 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:11.469 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:11.688 INFO: GET 200 /index.php
+- 12:48:11.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:12.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:12.969 INFO: GET 200 /index.php
+- 12:48:12.969 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:13.984 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:13.250 INFO: GET 200 /index.php
+- 12:48:13.250 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:15.266 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:15.516 INFO: GET 200 /index.php
+- 12:48:15.531 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:16.547 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:16.797 INFO: GET 200 /index.php
+- 12:48:16.813 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:17.813 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:17.063 INFO: GET 200 /index.php
+- 12:48:17.063 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:18.063 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:19.375 INFO: GET 200 /index.php
+- 12:48:19.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:20.391 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:20.750 INFO: GET 200 /index.php
+- 12:48:20.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53142/index.php
+- 12:48:21.766 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53142/index.php
+- 12:48:21.031 INFO: GET 200 /index.php
+- 12:48:21.156 DEBUG: WM_DESTROY
+- 12:48:21.156 DEBUG: RemoveBrowserWindow(): hwnd = 1312024
+- 12:48:21.156 INFO: Stopping Mongoose web server
+- 12:48:21.156 DEBUG: Mongoose webserver stopped immediately
+- 12:48:21.156 DEBUG: OnBeforeClose() hwnd=591088
+- 12:48:21.156 DEBUG: RemoveBrowserWindow(): hwnd = 591088
+- 12:48:21.156 DEBUG: GetBrowserWindow(): not found, hwnd = 591088
+- 12:48:21.156 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 12:48:21.156 DEBUG: Calling CefQuitMessageLoop()
+- 12:48:21.797 DEBUG: OnBrowserDestroyed()
+- 12:48:21.172 INFO: Ended application
+- 12:48:21.172 INFO: --------------------------------------------------------
+- 12:49:25.000 INFO: --------------------------------------------------------
+- 12:49:25.000 INFO: Started application
+- 12:49:25.000 INFO: Logging to: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log
+- 12:49:25.000 INFO: Log level = DEBUG4
+- 12:49:25.000 INFO: Starting Mongoose 3.9c web server
+- 12:49:25.000 INFO: WWW directory: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\www
+- 12:49:25.000 INFO: Index files: index.html,index.php
+- 12:49:25.000 INFO: CGI interpreter: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\php\php-cgi.exe
+- 12:49:25.000 INFO: CGI pattern: **.php$
+- 12:49:25.000 INFO: Hide files patterns: 
+- 12:49:25.000 INFO: CGI environment variables set: TMP=C:\Users\Utente\AppData\Local\Temp\,TEMP=C:\Users\Utente\AppData\Local\Temp\,TMPDIR=C:\Users\Utente\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 12:49:25.000 INFO: Web server url: http://127.0.0.1:53174/
+- 12:49:25.000 INFO: remote_debugging_port = 60253
+- 12:49:25.000 DEBUG: Command line string for the browser process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --remote-debugging-port=60253
+- 12:49:25.047 DEBUG: App::OnContextInitialized()
+- 12:49:25.047 DEBUG: Window max width/height = 1840/984
+- 12:49:25.047 DEBUG: GetBrowserWindow(): not found, hwnd = 198178
+- 12:49:25.047 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 12:49:25.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 12:49:25.047 DEBUG: StoreBrowserWindow(): hwnd = 198178
+- 12:49:25.016 DEBUG: Command line string for the gpu-process process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x9a78 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.4502 --gpu-driver-date=8-7-2023 --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --service-request-channel-token=4D919E115D6658CF05519A71E8DDFF7A --mojo-platform-channel-handle=1820 /prefetch:2
+- 12:49:25.094 DEBUG: ClientHandler::OnAfterCreated()
+- 12:49:25.094 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 12:49:25.110 DEBUG: OnLoadingStateChange: loading=1, url=
+- 12:49:25.000 DEBUG: Command line string for the renderer process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=renderer --no-sandbox --primordial-pipe-token=2CFB13D6F76506AC1E735F3C6A5199B0 --lang=en-US --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=2CFB13D6F76506AC1E735F3C6A5199B0 --renderer-client-id=3 --mojo-platform-channel-handle=2348 /prefetch:1
+- 12:49:25.031 DEBUG: OnBrowserCreated()
+[0524/124925.974:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 12:49:27.406 INFO: GET 302 /
+- 12:49:27.703 INFO: GET 200 /login.php
+- 12:49:27.594 DEBUG: OnContextCreated()
+[0524/124927.623:INFO:CONSOLE(6)] "Uncaught TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.", source: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js (6)
+- 12:49:27.813 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/login.php
+- 12:49:35.703 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/login.php
+- 12:49:35.938 INFO: POST 302 /login.php
+- 12:49:36.219 DEBUG: OnContextCreated()
+- 12:49:36.360 INFO: GET 200 /dashboard.php
+- 12:49:36.360 INFO: GET 200 /css/main.css
+[0524/124936.594:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/124936.594:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:49:36.844 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/dashboard.php
+- 12:49:39.938 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/dashboard.php
+- 12:49:40.125 DEBUG: OnContextCreated()
+- 12:49:40.250 INFO: GET 200 /scelta-carico.php
+[0524/124940.176:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/124940.176:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:49:40.391 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/scelta-carico.php
+- 12:49:41.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/scelta-carico.php
+- 12:49:42.078 DEBUG: OnContextCreated()
+- 12:49:42.203 INFO: GET 200 /carico-continuo.php
+[0524/124942.164:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/124942.170:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:49:42.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/carico-continuo.php
+- 12:49:45.938 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/carico-continuo.php
+- 12:49:46.219 DEBUG: OnContextCreated()
+- 12:49:46.344 INFO: GET 200 /dashboard.php
+[0524/124946.268:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/124946.268:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:49:46.500 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/dashboard.php
+- 12:49:47.203 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/dashboard.php
+- 12:49:47.375 DEBUG: OnContextCreated()
+- 12:49:47.500 INFO: GET 200 /fornitore.php
+[0524/124947.442:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/124947.444:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:49:47.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/fornitore.php
+- 12:49:49.203 INFO: GET 200 /QRcode/pippoqr-qrcode.png
+- 12:49:53.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/fornitore.php
+- 12:49:53.641 DEBUG: OnContextCreated()
+- 12:49:53.766 INFO: GET 200 /dashboard.php
+[0524/124953.939:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/124953.939:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:49:53.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/dashboard.php
+- 12:53:24.781 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/dashboard.php
+- 12:53:24.844 INFO: GET 302 /logout.php
+- 12:53:24.156 INFO: GET 302 /index.php
+- 12:53:25.703 DEBUG: OnContextCreated()
+- 12:53:25.828 INFO: GET 200 /login.php
+[0524/125325.657:INFO:CONSOLE(6)] "Uncaught TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.", source: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js (6)
+- 12:53:25.844 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/login.php
+- 12:54:03.078 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/login.php
+- 12:54:04.344 INFO: POST 302 /login.php
+- 12:54:04.469 DEBUG: OnContextCreated()
+- 12:54:04.594 INFO: GET 200 /dashboard.php
+[0524/125404.672:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/125404.673:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:54:04.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/dashboard.php
+- 12:57:54.610 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/dashboard.php
+- 12:57:54.781 DEBUG: OnContextCreated()
+- 12:57:54.906 INFO: GET 200 /scelta-carico.php
+[0524/125755.236:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/125755.238:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 12:57:55.453 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/scelta-carico.php
+- 13:01:37.969 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/scelta-carico.php
+- 13:01:38.110 DEBUG: OnContextCreated()
+- 13:01:38.235 INFO: GET 200 /carico-continuo.php
+[0524/130138.515:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/130138.515:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 13:01:38.735 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/carico-continuo.php
+- 13:03:49.797 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/carico-continuo.php
+- 13:03:50.110 DEBUG: OnContextCreated()
+- 13:03:50.235 INFO: POST 200 /controllo-qr.php
+- 13:03:50.235 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/controllo-qr.php
+- 13:03:50.250 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/controllo-qr.php
+- 13:03:50.860 INFO: POST 302 /elabora-carico.php
+- 13:03:51.172 DEBUG: OnContextCreated()
+- 13:03:51.297 INFO: GET 200 /carico-continuo.php
+[0524/130351.654:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/130351.654:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 13:03:51.860 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/carico-continuo.php
+- 13:03:55.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/carico-continuo.php
+- 13:03:55.735 DEBUG: OnContextCreated()
+- 13:03:55.875 INFO: POST 200 /controllo-qr.php
+- 13:03:55.875 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/controllo-qr.php
+- 13:03:55.875 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/controllo-qr.php
+- 13:03:55.125 INFO: POST 302 /elabora-carico.php
+- 13:03:56.500 DEBUG: OnContextCreated()
+- 13:03:56.625 INFO: GET 200 /carico-continuo.php
+[0524/130356.714:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/130356.714:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 13:03:56.922 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/carico-continuo.php
+- 13:03:58.203 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/carico-continuo.php
+- 13:03:58.500 DEBUG: OnContextCreated()
+- 13:03:58.625 INFO: GET 200 /dashboard.php
+[0524/130358.554:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/130358.554:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 13:03:58.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/dashboard.php
+- 13:03:59.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/dashboard.php
+- 13:04:00.094 DEBUG: OnContextCreated()
+- 13:04:00.219 INFO: GET 200 /carico-scarico.php?id=QR11111&qt=22
+[0524/130400.154:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/130400.154:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 13:04:00.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/carico-scarico.php?id=QR11111&qt=22
+- 13:04:04.188 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/carico-scarico.php?id=QR11111&qt=22
+- 13:04:06.235 DEBUG: OnContextCreated()
+- 13:04:06.360 INFO: GET 200 /dashboard.php
+[0524/130406.854:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/130406.854:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 13:04:06.063 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/dashboard.php
+- 13:07:47.688 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:53174/dashboard.php
+- 13:07:47.969 DEBUG: OnContextCreated()
+- 13:07:47.094 INFO: GET 200 /scelta-scarico.php
+[0524/130748.304:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0524/130748.304:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 13:07:48.531 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:53174/scelta-scarico.php
+- 13:18:38.610 DEBUG: WM_DESTROY
+- 13:18:38.610 DEBUG: RemoveBrowserWindow(): hwnd = 198178
+- 13:18:38.610 INFO: Stopping Mongoose web server
+- 13:18:38.610 DEBUG: Mongoose webserver stopped immediately
+- 13:18:38.625 DEBUG: OnBeforeClose() hwnd=1246490
+- 13:18:38.625 DEBUG: RemoveBrowserWindow(): hwnd = 1246490
+- 13:18:38.625 DEBUG: GetBrowserWindow(): not found, hwnd = 1246490
+- 13:18:38.625 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 13:18:38.625 DEBUG: Calling CefQuitMessageLoop()
+- 13:18:38.688 INFO: Ended application
+- 13:18:38.688 INFO: --------------------------------------------------------
+- 11:56:36.000 INFO: --------------------------------------------------------
+- 11:56:36.000 INFO: Started application
+- 11:56:36.000 INFO: Logging to: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log
+- 11:56:36.000 INFO: Log level = DEBUG4
+- 11:56:36.000 INFO: Starting Mongoose 3.9c web server
+- 11:56:36.000 INFO: WWW directory: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\www
+- 11:56:36.000 INFO: Index files: index.html,index.php
+- 11:56:36.000 INFO: CGI interpreter: C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\php\php-cgi.exe
+- 11:56:36.000 INFO: CGI pattern: **.php$
+- 11:56:36.000 INFO: Hide files patterns: 
+- 11:56:36.000 INFO: CGI environment variables set: TMP=C:\Users\Utente\AppData\Local\Temp\,TEMP=C:\Users\Utente\AppData\Local\Temp\,TMPDIR=C:\Users\Utente\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 11:56:36.015 INFO: Web server url: http://127.0.0.1:52452/
+- 11:56:36.015 INFO: remote_debugging_port = 60655
+- 11:56:36.015 DEBUG: Command line string for the browser process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --remote-debugging-port=60655
+- 11:56:36.046 DEBUG: App::OnContextInitialized()
+- 11:56:36.046 DEBUG: Window max width/height = 1840/984
+- 11:56:36.046 DEBUG: GetBrowserWindow(): not found, hwnd = 1376344
+- 11:56:36.046 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 11:56:36.062 DEBUG: BrowserWindow::CreateBrowserControl()
+- 11:56:36.062 DEBUG: StoreBrowserWindow(): hwnd = 1376344
+- 11:56:36.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x9a78 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.4502 --gpu-driver-date=8-7-2023 --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --service-request-channel-token=9D363CF9677A542E7184F3A14EBD283C --mojo-platform-channel-handle=1820 /prefetch:2
+- 11:56:36.093 DEBUG: ClientHandler::OnAfterCreated()
+- 11:56:36.093 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 11:56:36.109 DEBUG: OnLoadingStateChange: loading=1, url=
+- 11:56:36.000 DEBUG: Command line string for the renderer process: "C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\magazzino.exe" --type=renderer --no-sandbox --primordial-pipe-token=F48F68128A81CA672AA2434B35CCA6E7 --lang=en-US --lang=en-US --log-file="C:\Users\Utente\PhpstormProjects\magazzino\magazzino-php-exe\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=F48F68128A81CA672AA2434B35CCA6E7 --renderer-client-id=3 --mojo-platform-channel-handle=2252 /prefetch:1
+- 11:56:36.094 DEBUG: OnBrowserCreated()
+[0606/115637.048:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 11:56:38.531 INFO: GET 200 /
+- 11:56:38.546 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/
+- 11:56:39.546 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/
+- 11:56:39.687 INFO: GET 200 /index.php
+- 11:56:39.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:40.703 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:40.843 INFO: GET 200 /index.php
+- 11:56:40.843 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:41.859 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:41.000 INFO: GET 200 /index.php
+- 11:56:41.031 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:42.015 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:42.203 INFO: GET 200 /index.php
+- 11:56:42.218 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:43.218 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:44.359 INFO: GET 200 /index.php
+- 11:56:44.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:45.375 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:45.546 INFO: GET 200 /index.php
+- 11:56:45.562 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:46.562 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:46.718 INFO: GET 200 /index.php
+- 11:56:46.718 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:47.734 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:47.875 INFO: GET 200 /index.php
+- 11:56:47.875 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:48.890 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:48.031 INFO: GET 200 /index.php
+- 11:56:48.046 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:49.046 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:49.171 INFO: GET 200 /index.php
+- 11:56:49.187 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:50.203 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:51.359 INFO: GET 200 /index.php
+- 11:56:51.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:52.390 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:52.531 INFO: GET 200 /index.php
+- 11:56:52.531 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:53.546 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:53.687 INFO: GET 200 /index.php
+- 11:56:53.687 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:54.687 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:54.828 INFO: GET 200 /index.php
+- 11:56:54.828 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:55.843 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:55.984 INFO: GET 200 /index.php
+- 11:56:55.984 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:56.000 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:56.140 INFO: GET 200 /index.php
+- 11:56:56.140 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:57.140 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:57.281 INFO: GET 200 /index.php
+- 11:56:57.281 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:56:58.296 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:56:59.500 INFO: GET 200 /index.php
+- 11:56:59.500 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:00.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:00.640 INFO: GET 200 /index.php
+- 11:57:00.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:01.656 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:01.812 INFO: GET 200 /index.php
+- 11:57:01.812 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:02.812 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:02.953 INFO: GET 200 /index.php
+- 11:57:02.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:03.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:03.093 INFO: GET 200 /index.php
+- 11:57:03.109 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:04.125 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:04.265 INFO: GET 200 /index.php
+- 11:57:04.265 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:05.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:06.468 INFO: GET 200 /index.php
+- 11:57:06.484 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:07.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:07.671 INFO: GET 200 /index.php
+- 11:57:07.687 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/index.php
+- 11:57:08.687 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/index.php
+- 11:57:08.937 INFO: GET 302 /index.php
+- 11:57:08.250 INFO: GET 200 /login.php
+- 11:57:08.156 DEBUG: OnContextCreated()
+[0606/115709.206:INFO:CONSOLE(6)] "Uncaught TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.", source: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js (6)
+- 11:57:09.546 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/login.php
+- 11:57:19.546 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/login.php
+- 11:57:19.734 INFO: GET 200 /login.php
+- 11:57:19.594 DEBUG: OnContextCreated()
+[0606/115719.486:INFO:CONSOLE(6)] "Uncaught TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.", source: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js (6)
+- 11:57:19.828 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/login.php
+- 11:57:34.109 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52452/login.php
+- 11:57:34.250 INFO: POST 302 /login.php
+- 11:57:35.250 DEBUG: OnContextCreated()
+- 11:57:35.390 INFO: GET 200 /dashboard.php
+- 11:57:35.390 INFO: GET 200 /css/main.css
+[0606/115735.196:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js (6)
+[0606/115735.196:INFO:CONSOLE(6)] "Uncaught SyntaxError: Unexpected token ...", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js (6)
+- 11:57:35.593 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52452/dashboard.php
+- 11:57:42.718 INFO: GET 200 /css/main.css
+- 11:57:42.718 INFO: GET 200 /dashboard.php
+- 11:57:42.109 INFO: GET 302 /favicon.ico
+- 11:57:42.281 INFO: GET 200 /login.php
+- 11:57:56.390 INFO: GET 200 /elabora-smartphone.php
+- 11:57:56.578 INFO: GET 302 /favicon.ico
+- 11:57:56.718 INFO: GET 200 /login.php
+- 11:58:30.375 INFO: GET 200 /elabora-smartphone.php
+- 11:58:30.546 INFO: GET 302 /favicon.ico
+- 11:58:30.703 INFO: GET 200 /login.php
+- 11:58:31.343 INFO: GET 200 /elabora-smartphone.php
+- 11:58:31.515 INFO: GET 302 /favicon.ico
+- 11:58:31.671 INFO: GET 200 /login.php
+- 11:58:32.968 INFO: GET 200 /dashboard.php
+- 11:58:32.218 INFO: GET 302 /favicon.ico
+- 11:58:33.375 INFO: GET 200 /login.php
+- 11:58:44.984 INFO: GET 200 /elabora-smartphone.php
+- 11:58:44.171 INFO: GET 302 /favicon.ico
+- 11:58:44.328 INFO: GET 200 /login.php
+- 11:59:17.218 INFO: GET 200 /elabora-smartphone.php
+- 11:59:18.390 INFO: GET 302 /favicon.ico
+- 11:59:18.531 INFO: GET 200 /login.php
+- 11:59:52.812 INFO: GET 200 /dashboard-smartphone.php
+- 11:59:52.000 INFO: GET 302 /favicon.ico
+- 11:59:52.140 INFO: GET 200 /login.php
+- 12:00:59.015 INFO: GET 200 /dashboard-smartphone.php
+- 12:00:59.171 INFO: GET 302 /favicon.ico
+- 12:00:59.328 INFO: GET 200 /login.php
+- 12:01:01.546 INFO: GET 200 /dashboard.php
+- 12:01:01.781 INFO: GET 302 /favicon.ico
+- 12:01:01.921 INFO: GET 200 /login.php
+- 12:01:03.500 INFO: GET 200 /dashboard.php
+- 12:01:03.750 INFO: GET 302 /favicon.ico
+- 12:01:03.890 INFO: GET 200 /login.php
+- 12:01:07.343 INFO: GET 200 /fornitore.php
+- 12:01:07.593 INFO: GET 302 /favicon.ico
+- 12:01:07.750 INFO: GET 200 /login.php
+- 12:01:08.906 INFO: GET 200 /operatore.php
+- 12:01:08.140 INFO: GET 302 /favicon.ico
+- 12:01:08.296 INFO: GET 200 /login.php
+- 12:01:15.859 INFO: GET 302 /logout.php
+- 12:01:15.000 INFO: GET 302 /index.php
+- 12:01:15.156 INFO: GET 200 /login.php
+- 12:01:16.484 INFO: GET 302 /favicon.ico
+- 12:01:16.640 INFO: GET 200 /login.php
+- 12:01:24.062 INFO: POST 302 /login.php
+- 12:01:24.218 INFO: GET 200 /dashboard.php
+- 12:01:25.515 INFO: GET 302 /favicon.ico
+- 12:01:25.671 INFO: GET 200 /dashboard.php
+- 12:29:25.609 DEBUG: WM_DESTROY
+- 12:29:25.609 DEBUG: RemoveBrowserWindow(): hwnd = 1376344
+- 12:29:25.609 INFO: Stopping Mongoose web server
+- 12:29:25.609 DEBUG: Mongoose webserver stopped immediately
+- 12:29:25.625 DEBUG: OnBeforeClose() hwnd=853214
+- 12:29:25.625 DEBUG: RemoveBrowserWindow(): hwnd = 853214
+- 12:29:25.625 DEBUG: GetBrowserWindow(): not found, hwnd = 853214
+- 12:29:25.625 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 12:29:25.625 DEBUG: Calling CefQuitMessageLoop()
+- 12:29:25.671 INFO: Ended application
+- 12:29:25.671 INFO: --------------------------------------------------------

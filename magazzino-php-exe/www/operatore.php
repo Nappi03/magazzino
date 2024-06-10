@@ -37,7 +37,7 @@ require "connessione.php";
             $q = "SELECT * FROM operatore";
             $res = $con->query($q);
 
-            while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
+            while ($row = $res->fetch_object()) {
                 //echo "<tr class='table-link' data-href='carico-scarico.php?id=$row->QRcode&qt=$row->quantita_in_magazzino'>";
                 echo "<tr class='table-link' data-toggle='modal' data-target='#myModal' data-fornitore-id='{$row['idOperatore']}' data-fornitore-nome='{$row['nominativo']}'>";
                 echo "<td>{$row['idOperatore']}</td>";

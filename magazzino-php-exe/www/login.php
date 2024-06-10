@@ -35,7 +35,7 @@
 
                             $q = "select * from utente where email = '" . $email . "'";
                             $res = $con->query($q);
-                            $row = $res->fetchArray(SQLITE3_ASSOC);
+                            $row = $res->fetch_array(MYSQLI_ASSOC);
 
                             $_SESSION["USER_ID"] = $row["idUtente"];
                             $_SESSION["nome"] = $row["nome"];
@@ -58,7 +58,7 @@
                         $res = $con->query($q);
 
                         if($res != false){
-                            $row = $res->fetchArray(SQLITE3_ASSOC);
+                            $row = $res->fetch_array(MYSQLI_ASSOC);
                             if (isset($row) && $password == $row["password"]){
                                 return true;
                             } else {

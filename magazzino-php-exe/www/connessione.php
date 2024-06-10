@@ -1,27 +1,18 @@
 <?php
-// URL dell'API
-$url = "http://worldtimeapi.org/api/timezone/Europe/Rome";
+if(!defined ('NOMEDATABASE'  )) define ('NOMEDATABASE'  ,'magazzino');
+if(!defined ('SERVERDATABASE')) define ('SERVERDATABASE','127.0.0.1');
+if(!defined ('USERNAME'      )) define ('USERNAME'      ,'root');
+if(!defined ('PASSWORD'      )) define ('PASSWORD'      ,'');
 
-// Effettua la richiesta HTTP
-$response = file_get_contents($url);
+$con = @ new mysqli (SERVERDATABASE, USERNAME, PASSWORD);
 
-// Decodifica la risposta JSON
-$data = json_decode($response, true);
-
-// Controlla se la richiesta ha avuto successo
-if ($data && isset($data['datetime'])) {
-    $currentDateTime = new DateTime($data['datetime']);
-    $expirationDate = new DateTime('2025-05-30'); // Data di scadenza desiderata
-
-    if ($currentDateTime > $expirationDate) {
-        // La data corrente supera la data di scadenza, esegui il refresh della pagina
-        $page = $_SERVER['PHP_SELF'];
-        $sec = "10"; // Intervallo di refresh in secondi
-        header("Refresh: $sec; url=$page");
-    } else {
-        // Connessione al database SQLite
-        $con = new SQLite3('DB/magazzino.db');
-
-    }
+if ($con->connect_error) {
+    $msg= $con->connect_error;
+    $con = false;
+}
+if(!$con->select_db(NOMEDATABASE)) {
+    $msg = "La tabella <b>\"".NOMEDATABASE."\"</b>".": not esiste";
+    $con->close();
+    $con = false;
 }
 ?>

@@ -55,7 +55,7 @@ function controllo($id)
     global $con;
     $q = "SELECT * FROM prodotto WHERE QRcode = '$id'";
     $result = $con->query($q);
-    if ($result && $result->fetchArray(SQLITE3_ASSOC) > 0) {
+    if ($result && $result->fetch_row() > 0) {
         return true;
     } else {
         return false;

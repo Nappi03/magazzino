@@ -10,13 +10,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $fornitore = $_POST["fornitore"];
         $q = "SELECT * FROM prodotto WHERE QRcode = '$qrCode'";
         $result = $con->query($q);
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+        while ($row = $result->fetch_assoc()) {
             $nomeProd = $row['nomeProd'];
             $categoriaProd = $row['categoria'];
         }
         $q = "SELECT * FROM fornitore WHERE idFornitore = '$fornitore'";
         $result = $con->query($q);
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+        while ($row = $result->fetch_assoc()) {
             $nominativo = $row['nominativo'];
         }
     }

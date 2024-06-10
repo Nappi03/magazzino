@@ -43,7 +43,7 @@ require "connessione.php";
             $magazzino = $con->query($q);
             $data = array();
 
-            while ($row = $magazzino->fetchArray(SQLITE3_ASSOC)) {
+            while ($row = $magazzino->fetch_object()) {
                 echo "<tr class='table-link' data-href='carico-scarico.php?id={$row['QRcode']}&qt={$row['quantita_in_magazzino']}'>";
                 echo "<td>{$row['QRcode']}</td>";
                 echo "<td>{$row['nomeProd']}</td>";

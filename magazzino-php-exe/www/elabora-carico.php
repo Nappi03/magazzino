@@ -12,13 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $id = $_SESSION["USER_ID"];
         $q = "SELECT * FROM prodotto WHERE QRcode = '$qrCode'";
         $result = $con->query($q);
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+        while ($row = $result->fetch_assoc()) {
             $nomeProd = $row['nomeProd'];
             $categoriaProd = $row['categoria'];
         }
         $q = "SELECT * FROM fornitore WHERE idFornitore = '$fornitore'";
         $result = $con->query($q);
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+        while ($row = $result->fetch_assoc()) {
             $nominativo = $row['nominativo'];
         }
 
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $con->query($q);
         $q = "SELECT idCarico FROM carico WHERE dataOraCarico = '$dataOdierna'";
         $result = $con->query($q);
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+        while ($row = $result->fetch_assoc()) {
             $idCarico = $row['idCarico'];
         }
         $q = "INSERT INTO carico_prodotti VALUES ('$qrCode', $idCarico , $qt)";
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $con->query($q);
         $q = "SELECT idCarico FROM carico WHERE dataOraCarico = '$dataOdierna'";
         $result = $con->query($q);
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+        while ($row = $result->fetch_assoc()) {
             $idCarico = $row['idCarico'];
         }
         $q = "INSERT INTO carico_prodotti VALUES ('$qrCode', $idCarico , $qt)";
