@@ -33,7 +33,7 @@
                     <div class="dropdown">
                         <button class="dropbtn"><?php echo $_SESSION["nome"] . " " . $_SESSION["cognome"] ?></button>
                         <div class="dropdown-content">
-                            <!--<a href="gestione.php">Gestione Profilo</a>-->
+                            <a href="impostazioni.php">Impostazioni</a>
                             <a href="logout.php">Logout</a>
                         </div>
                     </div>
