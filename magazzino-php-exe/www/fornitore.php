@@ -30,6 +30,7 @@ require "connessione.php";
             <tr>
                 <th>CodiceQR</th>
                 <th>Nome Fornitore</th>
+                <th>Azioni</th>
             </tr>
             </thead>
             <tbody>
@@ -39,9 +40,11 @@ require "connessione.php";
 
             while ($row = $res->fetch_object()) {
                 //echo "<tr class='table-link' data-href='carico-scarico.php?id=$row->QRcode&qt=$row->quantita_in_magazzino'>";
-                echo "<tr class='table-link' data-toggle='modal' data-target='#myModal' data-fornitore-id='$row->idFornitore' data-fornitore-nome='$row->nominativo'>";
                 echo "<td>$row->idFornitore</td>";
                 echo "<td>$row->nominativo</td>";
+                echo "<td>";
+                echo "<a class='btn btn-success btn-edit' href='StampaFornitoreSingolo.php?id=$row->idFornitore'>Stampa QR</a> ";
+                echo "</td>";
                 echo "</tr>";
                 echo "</a>";
             }
@@ -81,75 +84,6 @@ require "connessione.php";
     $(document).ready(function () {
         $('#myTable').DataTable();
     });
-
-    // Gestisci il clic sulla riga e mostra il modal con l'immagine del fornitore
-    $(document).on('click', '.table-link', function () {
-        // Recupera l'ID del fornitore dalla riga selezionata (attributo data-fornitore-id)
-        const fornitoreId = $(this).data('fornitore-id');
-        const fornitoreNome = $(this).data('fornitore-nome');
-
-        // Imposta il titolo del modal con l'ID del fornitore e un a capo dopo l'ID
-        $('#myModalLabelID').html(fornitoreId);
-        $('#myModalLabelNome').html(fornitoreNome);
-
-        // Recupera l'URL dell'immagine del fornitore (aggiungi un attributo data-image-url alla riga)
-        const imageURL = 'QRcode/' + fornitoreId + '-qrcode.png';
-
-        // Imposta l'attributo src dell'elemento img con l'URL dell'immagine
-        $('#fornitoreImage').attr('src', imageURL);
-
-        // Mostra il modal
-        $('#myModal').modal('show');
-    });
-
-
-    // Gestisci il clic sul pulsante "Stampa" all'interno del modal
-    $('#stampareBtn').on('click', function () {
-        // Seleziona l'immagine da stampare
-        var imageToPrint = document.getElementById('fornitoreImage');
-
-        const ID = document.getElementById('myModalLabelID').innerText;
-        const Nome = document.getElementById('myModalLabelNome').innerText;
-
-        // Crea una nuova scheda del browser per la stampa
-        var printWindow = window.open();
-        printWindow.document.open();
-        printWindow.document.write('<html><head><title>Stampa QrCode</title></head><body>');
-        printWindow.document.write('<h1> ID: ' + ID + '<br> Nome: ' + Nome + '</h1>');
-        printWindow.document.write('<img src="' + imageToPrint.src + '" style="zoom: 50%"/>');
-        printWindow.document.write('</body></html>');
-        printWindow.document.close();
-
-        // Aspetta che l'immagine sia caricata prima di avviare la stampa
-        printWindow.document.querySelector('img').onload = function () {
-            printWindow.print();
-        };
-    });
-
-
-    // Gestisci il clic sul pulsante "Download" all'interno del modal
-    $('#downloadLink').on('click', function (event) {
-        // Impedisci il comportamento predefinito del link
-        event.preventDefault();
-
-        const Nome = document.getElementById('myModalLabelNome').innerText;
-        const ID = document.getElementById('myModalLabelID').innerText;
-
-        // Seleziona l'immagine da scaricare
-        var imageToDownload = document.getElementById('fornitoreImage');
-
-        // Ottieni l'URL dell'immagine
-        var imageURL = imageToDownload.src;
-
-        // Crea un link temporaneo per il download dell'immagine
-        var downloadLink = document.createElement('a');
-        downloadLink.href = imageURL;
-        downloadLink.download = ID + '_' + Nome + '.jpg'; // Specifica il nome del file da scaricare
-
-        // Simula un clic sul link per avviare il download
-        downloadLink.click();
-    });
-
 
 </script>
 

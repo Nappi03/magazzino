@@ -28,6 +28,13 @@ if (isset($_POST["qrCode"])) {
 		</form>
 	</body>";
             }
+            if (!controlloOperatore($operatore)) {
+                echo "<body onload='document.forms[0].submit()'>
+		<form action='nuovo-operatore.php' method='GET'>
+			<input type='hidden' name='msg' value='Operatore non ancora inizializzato, registrarlo tramite questa form'>
+		</form>
+	</body>";
+            }
         }
 
         if (isset($_POST["fornitore"])) {

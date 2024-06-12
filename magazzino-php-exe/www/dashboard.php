@@ -32,6 +32,7 @@ require "connessione.php";
                 <th>Nome Prodotto</th>
                 <th>Categoria</th>
                 <th>Quantità</th>
+                <th>Azioni</th>
             </tr>
             </thead>
             <tbody>
@@ -49,6 +50,9 @@ require "connessione.php";
                 echo "<td>$row->nomeProd</td>";
                 echo "<td>$row->categoria</td>";
                 echo "<td>$row->quantita_in_magazzino</td>";
+                echo "<td>";
+                echo "<a class='btn btn-success btn-edit' href='StampaProdottoSingolo.php?id=$row->QRcode'>Stampa QR</a> ";
+                echo "</td>";
                 echo "</tr>";
                 echo "</a>";
                 $data[] = $row;

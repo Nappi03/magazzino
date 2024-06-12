@@ -16,6 +16,12 @@ if (isset($_GET["msg"])) {
     <title>Scarico</title>
     <?php require "include.php" ?>
 
+    <script>
+        window.onload = function() {
+            document.getElementById("qrCode").focus();
+        };
+    </script>
+
 </head>
 <body>
 <?php require "navbar.php" ?>

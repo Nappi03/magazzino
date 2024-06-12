@@ -8,6 +8,12 @@ require "connessione.php";
     <title>Carico</title>
     <?php require "include.php" ?>
 
+    <script>
+        window.onload = function() {
+            document.getElementById("qrCode").focus();
+        };
+    </script>
+
 </head>
 <body>
 <?php require "navbar.php" ?>
