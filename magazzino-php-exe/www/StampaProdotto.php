@@ -31,15 +31,15 @@ $pdf->Cell(30, 15, utf8_decode('QrCode'), 1, 0, 'C');
 $pdf->Ln(); // Vai alla riga successiva
 $pdf->Ln(5); // Vai alla riga successiva
 // Popolamento della tabella con i dati dal database
-while ($row = $magazzino->fetchArray(SQLITE3_ASSOC)) {
-    $imgQR = 'QRcode/' . $row['QRcode'] . '-qrcode.png';
-    $imgLogo = $row['foto'];
+while ($row = $magazzino->fetch_object()) {
+    $imgQR = 'QRcode/' . $row->QRcode . '-qrcode.png';
+    $imgLogo = $row->foto;
 
     // Aggiunge una cella con un'immagine
     $pdf->Cell(30, 30, '', 1, 0, 'C');  // Cella vuota per il QR Code
     $pdf->Image($imgLogo, $pdf->GetX() - 27.5, $pdf->GetY() + 2.5, 25, 25);  // Aggiungi l'immagine sovrapposta alla cella
-    $pdf->Cell(65, 30, utf8_decode($row['nomeProd']), 1, 0, 'C');
-    $pdf->Cell(65, 30, utf8_decode($row['categoria']), 1, 0, 'C');
+    $pdf->Cell(65, 30, utf8_decode($row->nomeProd), 1, 0, 'C');
+    $pdf->Cell(65, 30, utf8_decode($row->categoria), 1, 0, 'C');
     $pdf->Cell(30, 30, '', 1, 0, 'C');  // Cella vuota per il QR Code
     $pdf->Image($imgQR, $pdf->GetX() - 27.5, $pdf->GetY() + 2.5, 25, 25);  // Aggiungi l'immagine sovrapposta alla cella
     $pdf->Ln(); // Vai alla riga successiva
