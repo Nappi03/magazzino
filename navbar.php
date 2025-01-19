@@ -1,45 +1,17 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="dashboard.php">
+            <img src="icon.ico" alt="Deposito" style="height: 40px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="dashboard.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="fornitore.php">Lista Fornitori</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="operatore.php">Lista Operatore</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="nuovo-fornitore.php">Nuovo Fornitore</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="nuovo-operatore.php">Nuovo Operatore</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="nuovo-prodotto.php">Nuovo prodotto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="scelta-carico.php">Carico</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary mx-2" href="scelta-scarico.php">Scarico</a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
-                    <div class="dropdown">
-                        <button class="dropbtn"><?php echo $_SESSION["nome"] . " " . $_SESSION["cognome"] ?></button>
-                        <div class="dropdown-content">
-                            <a href="impostazioni.php">Impostazioni</a>
-                            <a href="logout.php">Logout</a>
-                        </div>
-                    </div>
+                    <a class="nav-link active" aria-current="page" href="nuovo-prodotto.php">Nuovo Prodotto</a>
                 </li>
             </ul>
         </div>
     </div>
-
 </nav>
