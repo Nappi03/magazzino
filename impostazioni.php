@@ -56,11 +56,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
 
             while ($row = $magazzino->fetchArray(SQLITE3_ASSOC)) {
                 echo "<tr>";
-                echo "<td>$row->nome</td>";
-                echo "<td>$row->qt</td>";
+                echo "<td>{$row['nome']}</td>";
+                echo "<td>{$row['qt']}</td>";
                 echo "<td>";
-                echo "<button class='btn btn-warning btn-edit' data-id='$row->id' data-nome='$row->nome' data-qt='$row->qt' data-toggle='modal' data-target='#editProdottoModal'>Modifica</button> ";
-                echo "<button class='btn btn-danger btn-delete' data-id='$row->id' data-toggle='modal' data-target='#deleteProdottoModal'>Elimina</button>";
+                echo "<button class='btn btn-warning btn-edit' data-id='{$row['id']}' data-nome='{$row['nome']}' data-qt='{$row['qt']}' data-toggle='modal' data-target='#editProdottoModal'>Modifica</button> ";
+                echo "<button class='btn btn-danger btn-delete' data-id='{$row['id']}' data-toggle='modal' data-target='#deleteProdottoModal'>Elimina</button>";
                 echo "</td>";
                 echo "</tr>";
             }
