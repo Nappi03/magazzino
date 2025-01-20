@@ -159,5 +159,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
     </script>
 
 </body>
-<?php require "footer.php"; ?>
 </html>
