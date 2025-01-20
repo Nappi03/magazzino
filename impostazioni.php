@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
 
             $magazzino = $con->query($q);
 
-            while ($row = $magazzino->fetch_object()) {
+            while ($row = $magazzino->fetchArray(SQLITE3_ASSOC)) {
                 echo "<tr>";
                 echo "<td>$row->nome</td>";
                 echo "<td>$row->qt</td>";

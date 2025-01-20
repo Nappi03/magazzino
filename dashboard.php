@@ -35,7 +35,6 @@ require "connessione.php";
             $q = "SELECT * FROM prodotto";
 
             $magazzino = $con->query($q);
-            $data = array();
 
             while ($row = $magazzino->fetchArray(SQLITE3_ASSOC)) {
                 echo "<tr>";
