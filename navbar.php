@@ -11,6 +11,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="nuovo-prodotto.php">Nuovo Prodotto</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="impostazioni.php">Impostazioni</a>
+                </li>
             </ul>
         </div>
     </div>
