@@ -69,17 +69,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
         </table>
     </div>
 
-    <!-- Modal per Modifica Prodotto -->
-    <div class="modal fade" id="editProdottoModal" tabindex="-1" role="dialog" aria-labelledby="editProdottoModalLabel"
+
+    <div class="modal fade" id="editProdottoModal" tabindex="-1" aria-labelledby="editProdottoModalLabel"
          aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <form id="editProdottoForm" method="POST">
                     <div class="modal-header">
                         <h5 class="modal-title" id="editProdottoModalLabel">Modifica Prodotto</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <input type="hidden" id="editProdottoId" name="id">
@@ -96,13 +94,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
                         <button type="submit" class="btn btn-primary">Salva Modifiche</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
 
     <!-- Modal per Elimina Prodotto -->
     <div class="modal fade" id="deleteProdottoModal" tabindex="-1" role="dialog"
@@ -154,6 +153,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
                 var modal = $(this);
                 modal.find('#deleteProdottoId').val(id);
             });
+
 
         });
     </script>
