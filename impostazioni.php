@@ -59,8 +59,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
                 echo "<td>{$row['nome']}</td>";
                 echo "<td>{$row['qt']}</td>";
                 echo "<td>";
-                echo "<button class='btn btn-warning btn-edit' data-id='{$row['id']}' data-nome='{$row['nome']}' data-qt='{$row['qt']}' data-toggle='modal' data-target='#editProdottoModal'>Modifica</button> ";
-                echo "<button class='btn btn-danger btn-delete' data-id='{$row['id']}' data-toggle='modal' data-target='#deleteProdottoModal'>Elimina</button>";
+                echo "<button class='btn btn-warning btn-edit' data-id='{$row['id']}' data-nome='{$row['nome']}' data-qt='{$row['qt']}' data-bs-toggle='modal' data-bs-target='#editProdottoModal'>Modifica</button> ";
+                echo "<button class='btn btn-danger btn-delete' data-id='{$row['id']}' data-bs-toggle='modal' data-bs-target='#deleteProdottoModal'>Elimina</button>";
                 echo "</td>";
                 echo "</tr>";
             }
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
                         </div>
                         <div class="form-group">
                             <label for="editProdottoQt">QT.</label>
-                            <input type="text" class="form-control" id="editProdottoQt" name="QT."
+                            <input type="text" class="form-control" id="editProdottoQt" name="qt"
                                    required>
                         </div>
                     </div>
@@ -111,9 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
                 <form id="deleteProdottoForm" method="POST">
                     <div class="modal-header">
                         <h5 class="modal-title" id="deleteProdottoModalLabel">Conferma Eliminazione</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         Sei sicuro di voler eliminare questo prodotto?
@@ -122,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
                         <input type="hidden" name="delete_type" value="prodotto">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
                         <button type="submit" class="btn btn-danger">Elimina</button>
                     </div>
                 </form>
@@ -131,6 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
     </div>
 
     <script>
+
         $(document).ready(function () {
             $('#prodottiTable').DataTable();
 
@@ -153,7 +152,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['edit_type']) || isset
                 var modal = $(this);
                 modal.find('#deleteProdottoId').val(id);
             });
-
 
         });
     </script>
